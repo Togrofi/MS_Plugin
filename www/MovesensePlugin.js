@@ -26,7 +26,7 @@ MSPlugin.prototype.stopscanning = function (successCallback, errorCallback) {
   
 };
 
-MSPlugin.prototype.connect = function (successCallback, errorCallback) {
+MSPlugin.prototype.connect = function (successCallback, errorCallback, [type, mac, serial]) {
   //cordova.exec(successCallback, errorCallback, "Insomnia", "keepAwake", []);
   cordova.exec(
 	  ({type, mac, serial}) => {
